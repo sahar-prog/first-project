@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  p {
+    @apply text-yellow-600 
+    text-2xl
+    text-center 
+    font-bold 
+    underline; 
+  }
+
+  .cardsPosition {
+    @apply grid-cols-1 
+    sm:grid 
+    md:grid-cols-6;
+  }
+  .card {
+    @apply block 
+    w-full
+     max-w-[18rem] 
+     rounded-lg
+      bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700;
+  }
+  .item {
+    @apply mx-3 
+  mt-5 
+  flex 
+  flex-col 
+  self-start 
+  rounded-lg
+   bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0;
+  }
+
+  .lastItem {
+    @layer w-fullpx-4;
+    @apply py-1 
+    mx-3
+  dark:border-opacity-50;
+  }
+}
