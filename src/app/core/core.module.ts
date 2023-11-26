@@ -10,7 +10,3 @@ const SERVICESES = [HouseService];
   providers: [...SERVICESES],
 })
 export class CoreModule {}
-
-
-
-
