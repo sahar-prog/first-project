@@ -1,0 +1,18 @@
+<a (click)="onSelect(elixer)">
+  <div class="card">
+    <ul class="w-full">
+      <li class="item">Name: {{ elixer.name }}</li>
+      <li class="item">Effect: {{ elixer.effect }}</li>
+      <li class="item">SideEffects: {{ elixer.sideEffects }}</li>
+      <li class="item">Caracteristics: {{ elixer.caracteristics }}</li>
+      <li class="item">Time: {{ elixer.time }}</li>
+      <li class="lastItem">Dificulty: {{ elixer.dificulty }}</li>
+    </ul>
+  </div>
+</a>
+
+<div *ngIf="selectedElixer">
+  <h2>{{ selectedElixer.name }}</h2>
+  <div>id: {{ selectedElixer.id }}</div>
+  <div>effect: {{ selectedElixer.effect }}</div>
+</div>
