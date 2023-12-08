@@ -1,4 +1,3 @@
-<a (click)="onSelect(elixer)">
   <div class="card">
     <ul class="w-full">
       <li class="item">Name: {{ elixer.name }}</li>
@@ -9,10 +8,3 @@
       <li class="lastItem">Dificulty: {{ elixer.dificulty }}</li>
     </ul>
   </div>
-</a>
-
-<div *ngIf="selectedElixer">
-  <h2>{{ selectedElixer.name }}</h2>
-  <div>id: {{ selectedElixer.id }}</div>
-  <div>effect: {{ selectedElixer.effect }}</div>
-</div>
