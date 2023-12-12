@@ -1,0 +1,49 @@
+<div class="p-4">
+  <div
+    class="h-full rounded-xl shadow-cla-blue bg-gradient-to-r from-indigo-50 to-blue-50 overflow-hidden"
+  >
+    <div class="p-6">
+      <h1 class="title-font text-lg font-medium text-gray-600 mb-3">
+        {{ house.name }}
+      </h1>
+      <h2
+        class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+      >
+        common room: {{ house.commonRoom }}
+      </h2>
+      <h2
+        class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+      >
+        element: {{ house.element }}
+      </h2>
+      <h2
+        class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+      >
+        founder: {{ house.founder }}
+      </h2>
+      <h2
+        class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+      >
+        ghost: {{ house.ghost }}
+      </h2>
+      <h2
+        class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+      >
+        Heads
+      </h2>
+
+      <div class="flex items-center flex-wrap">
+        <span
+          *ngFor="let item of house.heads"
+          class="bg-gradient-to-r from-cyan-400 mx-auto to-blue-400 drop-shadow-md shadow-cla-blue px-4 py-1 rounded-lg"
+          >{{ item.firstName }}</span
+        >
+        <span
+          *ngFor="let item of house.heads"
+          class="bg-gradient-to-r from-cyan-400 mx-auto to-blue-400 drop-shadow-md shadow-cla-blue px-4 py-1 rounded-lg"
+          >{{ item.lastName }}</span
+        >
+      </div>
+    </div>
+  </div>
+</div>
